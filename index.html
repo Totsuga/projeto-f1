@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Fórmula 1</title>
+
+    <link rel="icon" type="image/x-icon" href="./src/imagens/formula.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/F1.svg" alt="Logo x-men" />
+    </header>
+
+    <main class="selecao-de-equipes">
+      <section class="equipes">
+        <h1 class="titulo">Selecione uma equipe</h1>
+        <ul class="lista-de-equipes">
+          <li
+            class="equipe selecionada"
+            id="red-bull-racing"
+            data-name="Oracle Red Bull Racing"
+            data-description="A Red Bull não era estranha à F1 - como patrocinadora - antes de entrar formalmente como equipe de trabalho em 2004. No entanto, a escala de seu sucesso na década seguinte foi impressionante. Depois de um primeiro pódio em 2006, a equipe atingiu seu auge em 2009, conquistando seis vitórias e o segundo lugar na classificação de construtores. Nas quatro temporadas seguintes, eles foram um tour de force, conquistando títulos duplos consecutivos entre 2010 e 2013, com Sebastian Vettel emergindo como o mais jovem campeão quádruplo do esporte. Agora eles estão reconquistando essa glória com um talento igualmente empolgante – um chamado Max Verstappen…"
+          >
+            <img
+              src="./src/imagens/Red_Bull_Racing_logo.png"
+              alt="Oracle Red Bull Racing"
+            />
+          </li>
+          <li
+            class="equipe"
+            id="mercedes"
+            data-name="Mercedes-AMG PETRONAS F1 Team"
+            data-description="O renascimento moderno da F1 da Mercedes começou com a criação de uma equipe de trabalho para 2010. A equipe gerou grande entusiasmo desde o início com o retorno sensacional de Michael Schumacher, mas as manchetes logo seguiram na pista: três pódios em sua temporada de estreia, tudo por meio de Nico Rosberg - que então conquistou uma pole/vitória dupla na China em 2012. O Na temporada seguinte, ele foi emparelhado com Lewis Hamilton, a dupla passou a encenar algumas batalhas épicas pelo título enquanto os Silver Arrows varriam tudo antes deles para se tornar uma das forças mais dominantes da era moderna da F1..."
+          >
+            <img
+              src="./src/imagens/Mercedes-Logo.svg"
+              alt="Mercedes-AMG PETRONAS F1 Team"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="aston-martin"
+            data-name="Aston Martin Aramco Cognizant F1 Team"
+            data-description="A incursão original da Aston Martin na Fórmula 1 – mais de meio século atrás – durou apenas cinco corridas. Desta vez, porém, é sério. Este esquadrão de F1 não é estranho ao sucesso, tendo vencido em seu disfarce original de Jordan e, mais recentemente, como Racing Point em 2020. Reconhecido por sua capacidade de bater acima de seu peso, e agora com um bicampeão liderando sua formação de pilotos, Aston Martin são um time para se observar…"
+          >
+            <img
+              src="./src/imagens/Aston-Martin-Logo.jpg"
+              alt="Aston Martin Aramco Cognizant F1 Team"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="ferrari"
+            data-name="Scuderia Ferrari"
+            data-description="Para muitos, as corridas de Ferrari e Fórmula 1 tornaram-se inseparáveis. A única equipe que competiu em todas as temporadas desde o início do campeonato mundial, o Cavalo Empinado cresceu do humilde sonho do fundador Enzo Ferrari para se tornar uma das marcas mais icônicas e reconhecidas do mundo. O sucesso veio rapidamente através de nomes como Alberto Ascari e John Surtees, e continuou - em tempos mais difíceis - com Niki Lauda na década de 1970 e Michael Schumacher na década de 2000, quando a Ferrari conquistou cinco títulos duplos consecutivos sem precedentes, garantindo seu status de a equipe mais bem-sucedida e condecorada da história da F1..."
+          >
+            <img
+              src="./src/imagens/Ferrari-Logo.svg"
+              alt="Scuderia Ferrari"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="mclaren"
+            data-name="McLaren F1 Team"
+            data-description="Desde que entrou no esporte em 1966 sob a orientação e esforço incansável do fundador homônimo Bruce, o sucesso da McLaren tem sido de tirar o fôlego. Cinco décadas brilhantes renderam inúmeras vitórias, pole position e pódios, para não mencionar oito campeonatos de construtores. Além do mais, alguns dos maiores pilotos do esporte fizeram seus nomes com a equipe, incluindo Emerson Fittipaldi, Ayrton Senna, Mika Hakkinen e Lewis Hamilton..."
+          >
+            <img
+              src="./src/imagens/Mclaren-Logo.png"
+              alt="McLaren F1 Team"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="alpine"
+            data-name="BWT Alpine F1 Team"
+            data-description="Alpine pode ser um nome relativamente novo para a Fórmula 1, mas o famoso braço de carros esportivos da Renault tem muita herança no automobilismo. A reformulação da marca em 2021 marcou o próximo passo no renascimento da Renault na F1, iniciado em 2016 com a aquisição da então equipe Lotus. Já os vencedores das corridas em sua nova roupagem, pódios regulares e uma inclinação para o título devem ser seu próximo alvo…"
+          >
+            <img
+              src="./src/imagens/Alpine_logo.png"
+              alt="BWT Alpine F1 Team"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="williams"
+            data-name="Williams Racing"
+            data-description="Impulsionado pelo brilhantismo e paixão do falecido Sir Frank Williams, Williams cresceu de um começo humilde para se tornar um gigante da Fórmula 1, inigualável por todos, exceto Ferrari e McLaren em termos de sucesso duradouro. Nas últimas quatro décadas, a equipe acumulou vitórias em Grandes Prêmios e glória em campeonatos e, no processo, desenvolveu alguns dos maiores talentos do esporte, dentro e fora do cockpit. E, após a decisão da família Williams de se afastar após a venda da equipe em 2020 para a Dorilton Capital, uma nova era começou..."
+          >
+            <img
+              src="./src/imagens/williams-racing-logo.png"
+              alt="Williams Racing"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="haas-f1-team"
+            data-name="MoneyGram Haas F1 Team"
+            data-description="A equipe mais jovem do grid, a Haas fez sua estreia impressionante em 2016 e, no processo, tornou-se a primeira equipe de F1 totalmente liderada pelos americanos em três décadas. Fundada pelo industrial Gene Haas, eles estão sediados nos Estados Unidos nas mesmas instalações de Kannapolis, Carolina do Norte, como sua equipe vencedora do campeonato NASCAR Sprint Cup Series, Stewart-Haas Racing. A equipe movida a Ferrari, liderada pelo carismático Guenther Steiner, também tem uma fábrica no Reino Unido em Banbury…"
+          >
+            <img
+              src="./src/imagens/Haas-Logo.png"
+              alt="MoneyGram Haas F1 Team"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="alfa-romeo"
+            data-name="Alfa Romeo F1 Team Stake"
+            data-description="O nome Alfa Romeo possui conexões com a Fórmula 1 que remontam ao início do campeonato em 1950. Avançando rapidamente para o século 21, o brilho italiano combina com a sensibilidade suíça em uma nova era para a equipe anteriormente conhecida como Sauber.Tendo desfrutado de um sucesso considerável nos carros esportivos mundiais, onde ajudou a nutrir os talentos emergentes das futuras estrelas da F1 Michael Schumacher e Heinz-Harald Frentzen, Peter Sauber guiou seu esquadrão homônimo para a F1 em 1993. Desde então, a equipe se estabeleceu como um dos pilares do grid, tornando-se vencedores de corridas sob o comando da BMW e desenvolvendo uma reputação merecida não apenas por produzir carros competitivos, mas também por desenvolver jovens pilotos."
+          >
+            <img
+              src="./src/imagens/Alfa_Romeo-logo.png"
+              alt="Alfa Romeo F1 Team Stake"
+            />
+          </li>
+
+          <li
+            class="equipe"
+            id="alphatauri"
+            data-name="Scuderia AlphaTauri"
+            data-description="Estabelecido em 2006 como um esquadrão no qual jovens pilotos do prodigioso pool de talentos da Red Bull poderiam cortar seus dentes na F1, o AlphaTauri – originalmente chamado Toro Rosso – foi formado das cinzas da corajosa equipe Minardi. Sebastian Vettel deu validade à abordagem quase imediatamente, entregando uma vitória de conto de fadas em 2008, antes de desfrutar do sucesso no campeonato mundial com a equipe mãe Red Bull Racing. Hoje, o ethos de cultivar talentos ainda é verdadeiro, embora a equipe italiana não seja mais simplesmente um 'time B', mas um construtor por si só..."
+          >
+            <img
+              src="./src/imagens/alphatauri-logo.png"
+              alt="Scuderia AlphaTauri"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="equipe-selecionada">
+        <img
+          class="equipe-carro"
+          src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/red-bull-racing.png.transform/4col/image.png"
+          alt="Equipe Selecionada"
+        />
+
+        <div class="informacoes-equipe">
+          <h2 class="nome-equipe" id="nome-equipe">Red Bull</h2>
+          <p class="historia-equipe" id="historia-equipe">
+            A Red Bull não era estranha à F1 - como patrocinadora - antes de
+            entrar formalmente como equipe de trabalho em 2004. No entanto, a
+            escala de seu sucesso na década seguinte foi impressionante. Depois
+            de um primeiro pódio em 2006, a equipe atingiu seu auge em 2009,
+            conquistando seis vitórias e o segundo lugar na classificação de
+            construtores. Nas quatro temporadas seguintes, eles foram um tour de
+            force, conquistando títulos duplos consecutivos entre 2010 e 2013,
+            com Sebastian Vettel emergindo como o mais jovem campeão quádruplo
+            do esporte. Agora eles estão reconquistando essa glória com um
+            talento igualmente empolgante – um chamado Max Verstappen…
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
